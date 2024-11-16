@@ -1,0 +1,191 @@
+.container{
+    height:450px;
+    width: 270px;
+    border: 2px solid white;
+    margin: 20px auto;
+    border-top: 6px solid;
+    border-bottom: 33px solid ;
+    border-radius: 12px;
+    background-color: rgb(239, 239, 239);
+}
+.user{
+    /* border: 1px solid white; */
+   
+    height: 100px;
+    text-align: center;
+    width: 100px;
+    margin:3rem auto;
+}
+.sim-t{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+.user .img{
+    box-shadow: 0 0 10px 1px white;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: auto;
+    background-size:cover;
+    background-position: center;
+    background-image: url('https://preview.redd.it/jai-shree-ram-v0-nnlxqlpc6bz91.png?width=1080&crop=smart&auto=webp&s=7cd100dc9c9c8cbb0de3ea56b54ac6554c53e94b');
+}
+.user h5{
+    margin-top: 0.7rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: black;
+}
+.call-div{
+    /* background-color: purple; */
+    height: 47%;
+    cursor: pointer;
+}
+.main-box1{
+
+    overflow: hidden;
+}
+.box1{
+    height: 40%;
+    background-color: rgb(250, 192, 192);
+    border-radius:8px 8px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    /* border: 1px solid black; */
+    transform: translateY(6rem);
+    transition: 0.4s ease;
+}
+.su{
+    height:80px;
+    width: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+}
+.su .circle{
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.su p{
+    font-size: 12px;
+    color: black;
+}
+.box2{
+    height: 75%;
+    background-color:rgb(250, 192, 192);
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    overflow: hidden;
+    padding-top: 0.8rem;
+}
+.end-call{
+    background-color: rgb(250, 192, 192);
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.call-box{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 4px black;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 225deg;
+}
+/* -------------------- */
+.first-cont{
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+.f-box1{
+    height: 40%;
+    width: 100%;
+    /* background-color: rgb(201, 152, 152); */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.f-box1 h3{
+    transform: translateY(0.4rem);
+}
+.v-icon{
+    color: blue;
+    padding: 0 3px;
+}
+.verify{
+    font-size: 12px;
+    color: rgb(83, 82, 82);
+    transform: translateY(0.8rem);
+}
+.img2{
+    height: 50%;
+    width: 73%;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: auto;
+    background-size:cover;
+    background-position: center;
+    background-image: url('https://preview.redd.it/jai-shree-ram-v0-nnlxqlpc6bz91.png?width=1080&crop=smart&auto=webp&s=7cd100dc9c9c8cbb0de3ea56b54ac6554c53e94b');
+}
+
+
+.f-box2{
+    height: 60%;
+    width: 100%;
+    /* background-color: rgb(117, 171, 153); */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.f-box2 p{
+    font-size: 12px;
+    color: rgb(83, 82, 82);
+    padding: 35px 0;
+}
+.pickup-call{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 3px rgb(197, 197, 197);
+    color: rgb(4, 206, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transform: translateY(0.8rem); */
+    animation: pick 1.8s  linear infinite ;
+}
+ @keyframes pick{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+ }
+
+.active .box1{
+    transform: translateY(0);
+}
+.active .circle{
+    /* background-color: rgb(255, 170, 170); */
+}
