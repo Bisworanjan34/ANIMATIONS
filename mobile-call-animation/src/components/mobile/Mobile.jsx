@@ -1,9 +1,13 @@
 import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Mobile.css"
-import { faCirclePause, faEllipsisVertical, faHandHolding, faKeyboard, faMicrophoneSlash, faPause, faPhone, faPhoneFlip, faShieldHalved, faVideo, faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePause, faEllipsisVertical, faKeyboard, faMicrophoneSlash, faPhone, faPhoneFlip, faShieldHalved, faVideo, faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 import { faRecordVinyl } from '@fortawesome/free-solid-svg-icons/faRecordVinyl';
 const Mobile = () => {
+ 
+
+
+    // let [bgcolor,setBgcolor]=useState('')
     let [call,setCall]=useState(false)
     let box1ref=useRef()
 
@@ -17,6 +21,7 @@ const Mobile = () => {
   return (
     <div>
       {/* <h3>mobile-call-animation</h3> */}
+      
       <div className="container">
 
      {
@@ -33,25 +38,25 @@ const Mobile = () => {
             <div className="box1">
                     <div className="su subbox-1">
                         <div className="circle">
-                        <FontAwesomeIcon icon={faCirclePause} size="" />
+                        <FontAwesomeIcon icon={faCirclePause}  />
                         </div>
                         <p>Hold</p>
                     </div>
                     <div className="su subbox-2">
                           <div className="circle">
-                          <FontAwesomeIcon icon={faRecordVinyl} size="" />
+                          <FontAwesomeIcon icon={faRecordVinyl}  />
                           </div>
                         <p>Record</p>
                     </div>
                     <div className="su subbox-3">
                           <div className="circle">
-                          <FontAwesomeIcon icon={faVideo} size="" />
+                          <FontAwesomeIcon icon={faVideo}  />
                           </div>
                         <p>Video call</p>
                     </div>
                     <div className="su subbox-4">
                           <div className="circle">
-                          <FontAwesomeIcon icon={faPhone} size="" />
+                          <FontAwesomeIcon icon={faPhone}  />
                           </div>
                         <p>Add call</p>
                     </div>
@@ -60,33 +65,34 @@ const Mobile = () => {
             <div className="main-box2">
             <div className="box2">
                     <div className="su subbox-5">
-                          <div className="circle">
-                          <FontAwesomeIcon icon={faKeyboard} size="" />
+                          <div className="circle " 
+                         >
+                          <FontAwesomeIcon icon={faKeyboard}  />
                           </div>
                         <p>Keypad</p>
                     </div>
                     <div className="su subbox-6">
-                          <div className="circle">
-                          <FontAwesomeIcon icon={faMicrophoneSlash} size="" />
+                          <div className="circle" >
+                          <FontAwesomeIcon icon={faMicrophoneSlash}  />
                           </div>
                         <p>Mute</p>
                     </div>
                     <div className="su subbox-7">
                           <div className="circle">
-                          <FontAwesomeIcon icon={faVolumeHigh} size="" />
+                          <FontAwesomeIcon icon={faVolumeHigh}  />
                           </div>
                         <p>speaker</p>
                     </div>
                     <div className="su subbox-8">
                           <div className="circle" onClick={morefun}>
-                          <FontAwesomeIcon icon={faEllipsisVertical} size="" />
+                          <FontAwesomeIcon icon={faEllipsisVertical}  />
                           </div>
                         <p>More</p>
                     </div>
             </div>
              <div className="end-call">
                 <div className="call-box" onClick={()=>setCall(false)}>
-                <FontAwesomeIcon icon={faPhoneFlip} size="" />
+                <FontAwesomeIcon icon={faPhoneFlip}  />
                 </div>
              </div>
             </div>
@@ -107,7 +113,7 @@ const Mobile = () => {
             <div className="div">
                 <p>Click to answer</p>
                 <div className="pickup-call" onClick={pickupfun}>
-                    <FontAwesomeIcon icon={faPhoneFlip} size='lg'/>
+                    <FontAwesomeIcon icon={faPhoneFlip}/>
                 </div>
                 <p>Thanks for calling</p>
             </div>
