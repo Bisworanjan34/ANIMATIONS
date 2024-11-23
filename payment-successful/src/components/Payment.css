@@ -1,24 +1,74 @@
 .circle{
   height: 70px;
   width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-radius: 50%;
   border: 1px solid white;
   background: rgba(220, 250, 220, 0.272);
-  animation: cir 1.7s ease infinite;
+  animation: cir 1.7s 5 ease ;
+  position: relative;
 }
 @keyframes cir{
     0%{
         transform: scale(0.5);
+     
     }
     50%{
         transform: scale(1.2);
+        opacity: 0.8;
     }
     100%{
         transform: scale(1);
+       
+        
     }
 }
 .circle img{
     height: 70px;
     background-blend-mode: hard-light;
     filter: saturate(4);
+    /* position: absolute; */
+    /* top: 0 */
+    border-radius: 50% ;
+    overflow: hidden;
+}
+.circle .img-div{
+    overflow: hidden;
+    /* background-color: red; */
+    border-radius: 50%;
+    z-index: 1;
+}
+.circle .move{
+    position: absolute;
+    top: 1.3rem;
+    left: 13px;
+    height: 3px;
+    width: 15px;
+    rotate: 130deg;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0 0 4px 3px rgb(21, 255, 0) ;
+    animation:move 1.5s 10 linear;
+}
+
+@keyframes move{
+    0%{
+        top: 1.4rem;
+        left: 14px;
+    }
+    25%{
+        top: 2.6rem;
+        left: 16px;
+    }
+    50%{
+        top:1.5rem ;
+        left: 2.5rem;
+        rotate: 40deg;
+    }
+    100%{
+        top: 1.3rem;
+        left: 13px;
+    }
 }

@@ -21,7 +21,10 @@ const Payment = ({setPayment}) => {
                 <div className="div1 text-center">
 
                 <div className="circle mx-auto">
-                    <img src={check} alt="check" />
+                   <div className="img-div">
+                   <img src={check} alt="check" />
+                   </div>
+                    <div className="move"></div>
                 </div>
                     <h5 className='text-md font-bold mt-4'>Payment Successful</h5>
                     <p className='text-yellow-200 font-semibold'>21 Nov 2024 at 11:11 PM</p>
